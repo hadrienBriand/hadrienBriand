@@ -1,13 +1,17 @@
 <template>
-    <div>
-        <GeneralHeader/>
-        <main class="flex ">
+         <GeneralHeader/>
+        <main class="flex h-[calc(100%-90px)]">
             <GeneralSidebar/>
-            <section class="w-full p-4">
-                <div class="wrapper rounded-t-lg bg-secondary">
+            <section class="wrapper w-full p-4 pb-0">
+                <div class=" rounded-t-lg bg-gray h-full ">
                     <slot></slot>
                 </div>
             </section>
         </main>
-    </div>
 </template>
+
+<style>
+    .wrapper{
+        margin-left: 200px;
+    }
+</style>

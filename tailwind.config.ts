@@ -7,8 +7,12 @@ export default <Partial<Config>>{
             colors:{
                 primary: '#635BFF',
                 'primary-light': '#ECEBFF',
+                'primary-hover':'#A6A2F4',
                 'primary-dark' :'#2F2A83',
-                secondary:'#F4F7FB'
+                secondary:'#1F2A3D',
+                'secondary-darker':"#1A2537",
+                gray:'#F4F7FB',
+                
             }
         }
     }
