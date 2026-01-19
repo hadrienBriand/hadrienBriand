@@ -1,9 +1,9 @@
 <template>
     <aside>
         <nav>
-            <NuxtLink to="/">Dashboard</NuxtLink>
-            <NuxtLink to="/about">À propos</NuxtLink>
-            <NuxtLink to="/">Contact</NuxtLink>
+            <NuxtLink to="/" activeClass="text-primary-dark bg-primary-light">Dashboard</NuxtLink>
+            <NuxtLink to="/about"  activeClass="text-primary-dark bg-primary-light">À propos</NuxtLink>
+            <NuxtLink to="/contact" activeClass="text-primary-dark bg-primary-light">Contact</NuxtLink>
         </nav>
     </aside>
 </template>
