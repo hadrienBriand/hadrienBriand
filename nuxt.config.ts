@@ -19,7 +19,8 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/tailwindcss',
     'nuxt-viewport',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    'nuxt-echarts'
     
   ]
 })

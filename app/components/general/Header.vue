@@ -1,7 +1,7 @@
 <template>
     <header class="h-[90px] flex items-center justify-between   px-4 transition-shadow z-10 relative">
             <NuxtLink  to="/" class="text-2xl font-light flex items-center gap-4 text-primary"> 
-                <img src="/images/logo.png" alt="" class="w-16">
+                <NuxtImg src="/images/logo.png" alt="" class="w-16"/>
                 Hadrien Briand
             </NuxtLink>
         <div class="flex items-center gap-4">
