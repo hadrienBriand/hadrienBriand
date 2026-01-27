@@ -8,9 +8,9 @@
             <Icon v-if="!isMenuOpen" name="solar:hamburger-menu-broken" class="text-primary text-4xl"/>
             <Icon v-else name="solar:close-circle-broken" class="text-primary text-4xl"/>
         </button>    
-        <NuxtLink  to="/" class="text-2xl font-light flex items-center gap-4 text-primary"> 
+        <NuxtLink  to="/" class="text-2xl font-light flex items-center gap-4 text-primary" title="Retour sur la page d'accueil"> 
                 <NuxtImg src="/images/logo.png" alt="" class="w-16"/>
-                Hadrien Briand
+                <p v-if="!isMobile" >Hadrien Briand </p>
             </NuxtLink>
         <div class="flex items-center gap-4 ml-auto">
             <button class="text-primary text-2xl transition hover:text-primary-hover hover:scale-110" title="Mode sombre" @click.prevent="handleDarkmode">
@@ -29,13 +29,16 @@
 
 <script setup lang="ts">
 
-    const { $viewport } = useNuxtApp()
+    const {breakpoint} = useResponsive()
+    
     const darkmode = ref(false)
     const { isMenuOpen, toggleMenu } = useMenu()
-
     function handleDarkmode(){
       darkmode.value = !darkmode.value
     }
+    const isMobile = computed(() => {
+        return breakpoint.value === 'mobile'
+    })
 
     const {responsive} = useResponsive()
 

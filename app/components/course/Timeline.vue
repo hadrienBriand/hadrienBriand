@@ -1,12 +1,13 @@
 <template>
     <ul class="timeline py-2 relative flex flex-col justify-center space-y-4">
         <li v-for="(job,index) in jobs" :key="index" class="flex justify-between items-center text-sm text-primary  relative">
-            <span class="text-xs">{{ job.time }}</span><p><strong>{{ job.title }}</strong> - {{ job.location }}</p>
+            <span class="text-xs">{{ job.time }}</span><p class="text-sm"><strong>{{ job.title }}</strong> - {{ job.location }}</p>
         </li>
     </ul>
 </template>
 
 <script setup lang="ts">
+
 
     const jobs = [
          {
@@ -44,6 +45,11 @@
         top: 0;
         left: 50px;
     }
+    @media screen and (max-width:550px) {
+         .timeline:before{
+            display: none;
+        }
+    }
 
     .timeline li::before{
         content: '';
@@ -55,5 +61,10 @@
         left: 45px;
         transform: translateY(-50%);
         border-radius: 100%;
+    }
+    @media screen and (max-width:550px) {
+         .timeline li::before{
+            display: none;
+        }
     }
 </style>

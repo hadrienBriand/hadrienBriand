@@ -2,15 +2,15 @@
     <div>
         <h1 class="sr-only">Hadrien Briand - Accueil</h1>
         <GeneralLoader v-if="isLoading" />
-        <div v-else class="grid grid-cols-3 gap-10 p-8">
+        <div v-else class="grid grid-cols-3 gap-10 p-4 md:p-8">
             <!----------Experience, identité & disponibilité ---------->
             <div class=" col-span-3 lg:col-span-2">
                 <Card icon="solar:chart-2-linear" title="Expérience">
                         <ExperienceChart />
-                        <p class="text-[10px] lg:text-[8px] font-light italic">* Graphique 100% confiance en soi.</p>
+                        <p class="text-[10px] lg:text-[8px] font-light italic p-2">* Graphique 100% confiance en soi.</p>
                 </Card>
             </div>
-            <div class="col-span-3 lg:col-span-1 flex flex-row lg:flex-col gap-6">
+            <div class="col-span-3 lg:col-span-1 flex flex-col md:flex-row lg:flex-col gap-6">
                 <Card icon="solar:user-bold" title="Identité" class="flex-1 relative" >
                    <div class="flex items-center">
                      <GeneralParagraph>
@@ -18,7 +18,7 @@
                         Développeur Frontend <br />
                         Lille
                     </GeneralParagraph>
-                    <NuxtImg src="/images/avatar.png" alt="" class="w-28 absolute bottom-2 right-2" loading="lazy"/>
+                    <NuxtImg src="/images/avatar.png" alt="" class="w-24 md:w-28 absolute bottom-2 right-2" loading="lazy"/>
                    </div>
                 </Card>
                 <Card icon="solar:clock-circle-broken" title="Disponibilité" class="flex-1" >
@@ -36,8 +36,10 @@
                 </Card>
                 <Card icon="solar:monitor-bold" title="Dernier projet" class="flex-1">
                     <GeneralParagraph>
-                        J'ai créé WIMSAPP - une app pour ne plus jamais perdre ses affaires chez soi. <br />
-                         on créé nos pièces, on enregistre tous nos objets avec leur emplacement exact, et on retrouve tout en un clin d'œil 
+                        J'ai créé WIMSAPP - une app pour ne plus jamais perdre ses affaires chez soi.
+                         </GeneralParagraph>
+                         <GeneralParagraph>
+                            on créé nos pièces, on enregistre tous nos objets avec leur emplacement exact, et on retrouve tout en un clin d'œil 
                          depuis un tableau de bord.
                          </GeneralParagraph>
                     <GeneralButton to="/last-project" label="En savoir plus" center/>
