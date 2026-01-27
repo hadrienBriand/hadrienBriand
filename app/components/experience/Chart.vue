@@ -5,7 +5,7 @@
 <script setup lang="ts">
     
 const currentYear = new Date().getFullYear()
-
+const startFirstYear = 2018;
 const generateYears = () => {
   const years = []
   for (let year = 2018; year <= currentYear; year++) {
@@ -14,7 +14,7 @@ const generateYears = () => {
   return years
 }
 
-const calculateExperience = (startYear: number) => {
+const calculateExperience = (startYear: number =startFirstYear ) => {
     const allYears = generateYears()
     return allYears.map(year => {
         if(year < startYear) return 
@@ -35,7 +35,7 @@ grid: {
     formatter: (params: any) => {
       let result = params[0].name + '<br/>'
       params.forEach((param: any) => {
-        if (param.value !== null && param.value !== undefined) {
+        if (param.value !== null && param.value !== undefined && param.value !== 0) {
           result += `${param.marker} ${param.seriesName}: ${param.value} ans<br/>`
         }
       })
@@ -54,12 +54,12 @@ grid: {
   yAxis: {
     type: 'value',
     min: 0,
-    max:12,
+    max:5,
     axisLabel: {
         margin:25,
     formatter: (value: number) => {
       if (value === 0) return 'Noob'
-      if (value === 12) return 'PGM'
+      if (value === 5) return 'Evan You *'
       return ''
     }
   }
@@ -68,7 +68,7 @@ grid: {
     {
       name: 'Expérience Front-end',
       type: 'line',
-      data: calculateExperience(2018),
+      data: calculateExperience(),
       smooth: true,
       itemStyle: {
         color: '#42b983' 
@@ -83,7 +83,7 @@ grid: {
       data: calculateExperience(2024),
       smooth: true,
       itemStyle: {
-        color: '#ff6b6b' 
+        color: 'blue' 
       },
       areaStyle: {
         opacity: 0.3

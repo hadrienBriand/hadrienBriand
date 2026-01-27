@@ -1,6 +1,6 @@
 <template>
     <ul class="timeline py-2 relative flex flex-col justify-center space-y-4">
-        <li v-for="(job,index) in jobs" :key="index" class="flex justify-between items-center text-sm text-primary relative">
+        <li v-for="(job,index) in jobs" :key="index" class="flex justify-between items-center text-sm text-primary dark:text-primary-light relative">
             <span class="text-xs">{{ job.time }}</span><p><strong>{{ job.title }}</strong> - {{ job.location }}</p>
         </li>
     </ul>

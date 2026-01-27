@@ -4,47 +4,51 @@
         <GeneralLoader v-if="isLoading" />
         <div v-else class="grid grid-cols-3 gap-10 p-8">
             <!----------Experience, identité & disponibilité ---------->
-            <div class=" col-span-2">
+            <div class=" col-span-3 lg:col-span-2">
                 <Card icon="solar:chart-2-linear" title="Expérience">
                         <ExperienceChart />
+                        <p class="text-[10px] lg:text-[8px] font-light italic">* Graphique 100% confiance en soi.</p>
                 </Card>
             </div>
-            <div class="flex flex-col gap-6">
+            <div class="col-span-3 lg:col-span-1 flex flex-row lg:flex-col gap-6">
                 <Card icon="solar:user-bold" title="Identité" class="flex-1 relative" >
                    <div class="flex items-center">
-                     <p class="text-sm text-gray-700">
+                     <GeneralParagraph>
                         Hadrien Briand <br />
-                        Développeur frontend <br />
+                        Développeur Frontend <br />
                         Lille
-                    </p>
+                    </GeneralParagraph>
                     <NuxtImg src="/images/avatar.png" alt="" class="w-28 absolute bottom-2 right-2" loading="lazy"/>
                    </div>
                 </Card>
                 <Card icon="solar:clock-circle-broken" title="Disponibilité" class="flex-1" >
-                      <p class="text-sm text-gray-700">
+                      <GeneralParagraph>
                         Mars 2026 <br />
                         Métropole Lilloise / full-remote
-                        </p>
+                        </GeneralParagraph>
                 </Card>
             </div>
             <!----------Compétences, Parcours & dernier projet ---------->
-            <div class=" col-span-2">
+            
+            <div class="flex flex-col lg:flex-row xl:flex-col gap-6  col-span-3 xl:col-span-1">
+                <Card icon="solar:server-path-broken" title="parcours" class="flex-1 ">
+                    <CourseTimeline />
+                </Card>
+                <Card icon="solar:monitor-bold" title="Dernier projet" class="flex-1">
+                    <GeneralParagraph>
+                        J'ai créé WIMSAPP - une app pour ne plus jamais perdre ses affaires chez soi. <br />
+                         on créé nos pièces, on enregistre tous nos objets avec leur emplacement exact, et on retrouve tout en un clin d'œil 
+                         depuis un tableau de bord.
+                         </GeneralParagraph>
+                    <GeneralButton to="/last-project" label="En savoir plus" center/>
+                </Card>
+            </div>
+            <div class="col-span-3 xl:col-span-2">
                 <Card icon="solar:settings-broken" title="compétences" >
                     <CardSkills />
                 </Card>
             </div>
-            <div>
-                <Card icon="solar:server-path-broken" title="parcours" class="mb-6">
-                    <CourseTimeline />
-                </Card>
-                <Card icon="solar:monitor-bold" title="Dernier projet">
-                    <p class="text-sm text-gray-700 my-4 px-2">
-                        J'ai créé WIMSAPP - une app pour ne plus jamais perdre ses affaires chez soi. <br />
-                         on créé nos pièces, on enregistre tous nos objets avec leur emplacement exact, et on retrouve tout en un clin d'œil 
-                         depuis un tableau de bord.</p>
-                    <GeneralButton to="/last-project" label="En savoir plus" center/>
-                </Card>
-            </div>
+            
         </div>
         
         
@@ -59,4 +63,7 @@
             isLoading.value = false
         }, 300)
     })
+
+   
+
 </script>
