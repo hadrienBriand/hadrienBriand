@@ -2,15 +2,15 @@
     <header class="h-[60px] lg:h-[90px] flex items-center lg:justify-between   px-4 transition-shadow z-20 fixed w-full bg-white">
         <button 
         @click="toggleMenu"
-        v-if="responsive" 
+       
         role="button" :title="textToggle" 
-        class="w-10 h-10 flex items-center justify-center mr-8">
+        class="w-10 h-10 flex items-center justify-center mr-8  sm:hidden">
             <Icon v-if="!isMenuOpen" name="solar:hamburger-menu-broken" class="text-primary text-4xl"/>
             <Icon v-else name="solar:close-circle-broken" class="text-primary text-4xl"/>
         </button>    
         <NuxtLink  to="/" class="text-2xl font-light flex items-center gap-4 text-primary" title="Retour sur la page d'accueil"> 
                 <NuxtImg src="/images/logo.png" alt="" class="w-16"/>
-                <p v-if="!isMobile" >Hadrien Briand </p>
+                <p class="hidden sm:block" >Hadrien Briand </p>
             </NuxtLink>
         <div class="flex items-center gap-4 ml-auto">
             <button class="text-primary text-2xl transition hover:text-primary-hover hover:scale-110" title="Mode sombre" @click.prevent="handleDarkmode">
