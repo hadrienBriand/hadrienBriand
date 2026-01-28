@@ -29,18 +29,12 @@
 
 <script setup lang="ts">
 
-    const {breakpoint} = useResponsive()
     
     const darkmode = ref(false)
     const { isMenuOpen, toggleMenu } = useMenu()
     function handleDarkmode(){
       darkmode.value = !darkmode.value
     }
-    const isMobile = computed(() => {
-        return breakpoint.value === 'mobile'
-    })
-
-    const {responsive} = useResponsive()
 
     const textToggle = computed(() => {
         return isMenuOpen.value ? 'Fermer le menu' : 'Ouvrir le menu'

@@ -31,9 +31,11 @@
     const {responsive} = useResponsive()
 
     const sidebarResponsive = computed(() => {
-        return (isMenuOpen.value && responsive.value);
+        if(responsive.value){
+            return isMenuOpen.value
+        }
+        return true
     })
-
 
 </script>
 
