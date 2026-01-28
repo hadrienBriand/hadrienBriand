@@ -4,7 +4,7 @@
         @click="toggleMenu"
        
         role="button" :title="textToggle" 
-        class="w-10 h-10 flex items-center justify-center mr-8  sm:hidden">
+        class="w-10 h-10 flex items-center justify-center mr-8  ">
             <Icon v-if="!isMenuOpen" name="solar:hamburger-menu-broken" class="text-primary text-4xl"/>
             <Icon v-else name="solar:close-circle-broken" class="text-primary text-4xl"/>
         </button>    

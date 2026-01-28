@@ -17,10 +17,8 @@
 
 
     const wrapper = computed(() => {
-        if(responsive.value){
             return isMenuOpen.value
-        }
-        return true
+      
     })
     
 </script>

@@ -30,22 +30,11 @@
 <script setup lang="ts">
 
     const {isMenuOpen,toggleMenu} = useMenu()
-    const {responsive} = useResponsive()
 
-    const { $viewport } = useNuxtApp()
-
-    const isReady = ref(false)
-
-    onMounted(() => {
-    isReady.value = true
-    })
+    
 
     const sidebarResponsive = computed(() => {
-        if (!isReady.value) return false
-        if(responsive.value){
             return isMenuOpen.value
-        }
-        return true
     })
 
 </script>

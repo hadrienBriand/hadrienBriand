@@ -3,7 +3,6 @@ export const useMenu = () => {
 
     const toggleMenu = (): void => {
         isMenuOpen.value = !isMenuOpen.value
-        console.log(isMenuOpen.value)
     }
 
     const closeMenu = () => {
