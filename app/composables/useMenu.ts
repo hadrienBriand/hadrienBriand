@@ -1,5 +1,19 @@
+
 export const useMenu = () => {
-    const isMenuOpen = useState('menu-open',() => false)
+
+    const viewport = useViewport()
+    const isMenuOpen = useState('menu-open',() => {
+          return viewport.isGreaterOrEquals('desktop')
+    })
+
+      watch(() => viewport.breakpoint.value, (newBreakpoint) => {
+        if (viewport.isGreaterOrEquals('desktop')) {
+            isMenuOpen.value = true
+        } 
+        else {
+            isMenuOpen.value = false
+        }
+    })
 
     const toggleMenu = (): void => {
         isMenuOpen.value = !isMenuOpen.value
