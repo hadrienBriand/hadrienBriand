@@ -1,7 +1,7 @@
 <template>
         <h1 class="sr-only">Hadrien Briand - Accueil</h1>
         <GeneralLoader v-if="isLoading" />
-        <div v-else class="grid grid-cols-1 lg:grid-cols-3 gap-10 p-4 md:p-8">
+        <div v-else class="grid grid-cols-1 lg:grid-cols-3 gap-10 ">
             <!------ Chart ------>
             <div class=" col-span-3 lg:col-span-2">
                 <Card icon="solar:chart-2-linear" title="Expérience">
@@ -18,7 +18,7 @@
                         Développeur Frontend <br />
                         Lille
                     </GeneralParagraph>
-                    <NuxtImg src="/images/avatar.png" alt="Illustration d'Hadrien Briand" class="w-24 md:w-28 absolute bottom-2 right-2" loading="lazy"/>
+                    <NuxtImg src="/images/avatar.png" alt="Illustration d'Hadrien Briand" class="w-24 xl:w-28 absolute bottom-2 right-2" loading="lazy"/>
                    </div>
                 </Card>
                 <Card icon="solar:clock-circle-broken" title="Disponibilité" class="flex-1" >

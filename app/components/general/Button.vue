@@ -6,6 +6,7 @@
 <script setup lang="ts">
     const props =defineProps<{
         role?:string
+        type?:string
         label:string
         to?:string
         center?:boolean
