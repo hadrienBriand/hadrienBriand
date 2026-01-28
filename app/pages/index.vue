@@ -1,15 +1,15 @@
 <template>
-    <div>
         <h1 class="sr-only">Hadrien Briand - Accueil</h1>
         <GeneralLoader v-if="isLoading" />
-        <div v-else class="grid grid-cols-3 gap-10 p-4 md:p-8">
-            <!----------Experience, identité & disponibilité ---------->
+        <div v-else class="grid grid-cols-1 lg:grid-cols-3 gap-10 p-4 md:p-8">
+            <!------ Chart ------>
             <div class=" col-span-3 lg:col-span-2">
                 <Card icon="solar:chart-2-linear" title="Expérience">
                         <ExperienceChart />
                         <p class="text-[10px] lg:text-[8px] font-light italic p-2">* Graphique 100% confiance en soi.</p>
                 </Card>
             </div>
+            <!------ Identité / Disponibilité ------>
             <div class="col-span-3 lg:col-span-1 flex flex-col md:flex-row lg:flex-col gap-6">
                 <Card icon="solar:user-bold" title="Identité" class="flex-1 relative" >
                    <div class="flex items-center">
@@ -18,7 +18,7 @@
                         Développeur Frontend <br />
                         Lille
                     </GeneralParagraph>
-                    <NuxtImg src="/images/avatar.png" alt="" class="w-24 md:w-28 absolute bottom-2 right-2" loading="lazy"/>
+                    <NuxtImg src="/images/avatar.png" alt="Illustration d'Hadrien Briand" class="w-24 md:w-28 absolute bottom-2 right-2" loading="lazy"/>
                    </div>
                 </Card>
                 <Card icon="solar:clock-circle-broken" title="Disponibilité" class="flex-1" >
@@ -28,8 +28,7 @@
                         </GeneralParagraph>
                 </Card>
             </div>
-            <!----------Compétences, Parcours & dernier projet ---------->
-            
+            <!------ Parcours / Dernier projet ------>
             <div class="flex flex-col lg:flex-row xl:flex-col gap-6  col-span-3 xl:col-span-1">
                 <Card icon="solar:server-path-broken" title="parcours" class="flex-1 ">
                     <CourseTimeline />
@@ -45,6 +44,7 @@
                     <GeneralButton to="/last-project" label="En savoir plus" center/>
                 </Card>
             </div>
+            <!------ Compétences ------>
             <div class="col-span-3 xl:col-span-2">
                 <Card icon="solar:settings-broken" title="compétences" >
                     <CardSkills />
@@ -54,16 +54,29 @@
         </div>
         
         
-    </div>
 </template>
 
 <script setup lang="ts">
+
+    useHead({
+  title: 'Hadrien Briand - Développeur Frontend à Lille',
+  meta: [
+    { 
+      name: 'description', 
+      content: 'Développeur Frontend spécialisé en Vue.js et Nuxt. Disponible en Mars 2026 pour missions en métropole lilloise ou full-remote. Découvrez mon portfolio et mes projets.' 
+    },
+    { property: 'og:title', content: 'Hadrien Briand - Développeur Frontend' },
+    { property: 'og:description', content: 'Portfolio et projets d\'un développeur Frontend à Lille' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:image', content: '/images/avatar.png' },
+    { name: 'twitter:card', content: 'summary' }
+  ]
+})
+
     const isLoading = ref(true)
 
     onMounted(() => {
-        setTimeout(() => {
             isLoading.value = false
-        }, 300)
     })
 
    

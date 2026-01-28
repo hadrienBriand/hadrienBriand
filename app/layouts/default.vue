@@ -2,11 +2,11 @@
          <GeneralHeader/>
         <main class="flex min-h-screen ">
             <GeneralSidebar/>
-            <section class=" w-full px-0 lg:px-4 pt-[60px] lg:pt-[90px] pb-0 transition" :class="!wrapper ? '' :'wrapper'">
+            <div class=" w-full px-0 lg:px-4 pt-[60px] lg:pt-[90px] pb-0 transition" :class="!wrapper ? '' :'wrapper'">
                 <div class=" rounded-t-lg bg-gray h-full">
                     <slot></slot>
                 </div>
-            </section>
+            </div>
         </main>
 </template>
 

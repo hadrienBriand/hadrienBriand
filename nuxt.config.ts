@@ -21,6 +21,16 @@ export default defineNuxtConfig({
     'nuxt-viewport',
     '@nuxtjs/color-mode',
     'nuxt-echarts'
-    
-  ]
+  ],
+   icon: {
+    provider:"server",
+    serverBundle: {
+      collections: ['solar'],
+      remote: false
+    },
+     clientBundle: {
+      scan: true,
+      sizeLimitKb: 512
+    }
+  }
 })
