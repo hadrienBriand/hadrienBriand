@@ -3,3 +3,9 @@ export  interface Skill{
     img:string;
     stars:number
 }
+
+export interface contactForm {
+    fullName:string;
+    email:string;
+    message:string;
+}

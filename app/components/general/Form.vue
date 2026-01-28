@@ -1,11 +1,12 @@
 <template>
-    <form action="" class="w-full lg:w-4/5">
+    <form action="" class="w-full lg:w-4/5" @submit.prevent="handleSubmit">
         <fieldset>
             <legend class="sr-only">Formulaire de contact</legend>
             
         <div class="flex flex-col mb-4">
       <label for="nom-complet" class="text-sm text-primary mb-2">Nom complet </label>
       <input 
+        v-model="form.fullName" 
         type="text" 
         id="nom-complet" 
         name="nom-complet" 
@@ -22,6 +23,7 @@
                 Adresse e-mail 
             </label>
             <input 
+                v-model="form.email" 
                 type="email" 
                 id="email" 
                 name="email" 
@@ -40,6 +42,7 @@
                 Message 
             </label>
             <textarea 
+                v-model="form.message" 
                 id="message" 
                 name="message" 
                 rows="6" 
@@ -52,8 +55,57 @@
             </div>
 
             <div>
-            <GeneralButton label="Envoyer" type="submit"/>
+            <GeneralButton  :disabled="loading" label="Envoyer" type="submit"/>
             </div>
         </fieldset>
+         <div v-if="showSuccess" class="alert alert-success">
+            ✅ Message envoyé avec succès ! Je vous répondrai bientôt.
+        </div>
+
+        <div v-if="showError" class="alert alert-error">
+        ❌ {{ errorMessage }}
+        </div>
     </form>
 </template>
+
+<script setup lang="ts">
+
+    const form = ref<contactForm>({
+        fullName:'',
+        email:'',
+        message:''
+    })
+    
+    const loading = ref(false)
+    const showSuccess = ref(false)
+    const showError = ref(false)
+    const errorMessage =ref('')
+
+    function resetForm(){
+        form.value = {fullName:'',email:'',message:''}
+    }
+
+   async  function handleSubmit(){
+    loading.value = true;
+    showSuccess.value = false;
+    showError.value = false;
+
+    try {
+        await $fetch('/api/contact',{
+            method:'POST',
+            body:form.value
+        })
+
+        showSuccess.value =  true
+        resetForm()
+        setTimeout(() => {
+      showSuccess.value = false
+    }, 5000)
+    } catch (error:any) {
+        showError.value = true;
+        errorMessage.value = error.data?.message || "une erreur est survenue"
+    }finally{
+        loading.value= false;
+    }
+   }
+</script>

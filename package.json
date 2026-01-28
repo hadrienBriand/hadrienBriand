@@ -19,6 +19,7 @@
     "nuxt": "^4.2.2",
     "nuxt-echarts": "^1.0.1",
     "nuxt-viewport": "^2.3.1",
+    "resend": "^6.9.1",
     "vue": "^3.5.26",
     "vue-echarts": "^8.0.1",
     "vue-router": "^4.6.4"
@@ -26,6 +27,7 @@
   "devDependencies": {
     "@iconify-json/solar": "^1.2.5",
     "@nuxtjs/tailwindcss": "^6.14.0",
+    "@types/node": "^25.1.0",
     "color-mode": "^0.1.0"
   }
 }
