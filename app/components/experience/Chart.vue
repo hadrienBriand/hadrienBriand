@@ -27,8 +27,7 @@ grid: {
     top: '10%',
     bottom: '20%',   
     left: '8%',
-    right: '4%',
-    containLabel: true
+    right: '4%'
   },
   tooltip: {
     trigger: 'axis',
