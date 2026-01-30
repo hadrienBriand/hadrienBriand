@@ -41,7 +41,7 @@
                             on créé nos pièces, on enregistre tous nos objets avec leur emplacement exact, et on retrouve tout en un clin d'œil 
                          depuis un tableau de bord.
                          </ContentParagraph>
-                    <GeneralButton to="/last-project" label="En savoir plus" center/>
+                    <GeneralButton to="/dernier-projet" label="En savoir plus" center/>
                 </Card>
             </div>
             <!------ Compétences ------>
