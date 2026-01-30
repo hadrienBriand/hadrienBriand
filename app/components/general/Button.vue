@@ -10,6 +10,7 @@
         label:string
         to?:string
         center?:boolean
+        big?:boolean
     }>()
-    const classes = computed(() => { return `text-sm text-primary font-semibold bg-primary-light py-2 px-4 w-fit rounded-md transition hover:bg-primary-hover hover:text-white ${props.center ? 'mx-auto block ' : ''} `})
+    const classes = computed(() => { return ` text-primary font-semibold bg-primary-light py-2 px-4 w-fit rounded-md transition hover:bg-primary-hover hover:text-white ${props.center ? 'mx-auto block ' : ''}  ${props.big ? 'text-lg' :'text-sm'}`})
 </script>

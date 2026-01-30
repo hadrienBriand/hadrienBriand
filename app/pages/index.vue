@@ -13,19 +13,19 @@
             <div class="col-span-3 lg:col-span-1 flex flex-col md:flex-row lg:flex-col gap-6">
                 <Card icon="solar:user-bold" title="Identité" class="flex-1 relative" >
                    <div class="flex items-center">
-                     <GeneralParagraph>
+                     <ContentParagraph>
                         Hadrien Briand <br />
                         Développeur Frontend <br />
                         Lille
-                    </GeneralParagraph>
+                    </ContentParagraph>
                     <NuxtImg src="/images/avatar.png" alt="Illustration d'Hadrien Briand" class="w-24 xl:w-28 absolute bottom-2 right-2" loading="lazy"/>
                    </div>
                 </Card>
                 <Card icon="solar:clock-circle-broken" title="Disponibilité" class="flex-1" >
-                      <GeneralParagraph>
+                      <ContentParagraph>
                         Mars 2026 <br />
                         Métropole Lilloise / full-remote
-                        </GeneralParagraph>
+                        </ContentParagraph>
                 </Card>
             </div>
             <!------ Parcours / Dernier projet ------>
@@ -34,13 +34,13 @@
                     <CourseTimeline />
                 </Card>
                 <Card icon="solar:monitor-bold" title="Dernier projet" class="flex-1">
-                    <GeneralParagraph>
+                    <ContentParagraph>
                         J'ai créé WIMSAPP - une app pour ne plus jamais perdre ses affaires chez soi.
-                         </GeneralParagraph>
-                         <GeneralParagraph>
+                         </ContentParagraph>
+                         <ContentParagraph>
                             on créé nos pièces, on enregistre tous nos objets avec leur emplacement exact, et on retrouve tout en un clin d'œil 
                          depuis un tableau de bord.
-                         </GeneralParagraph>
+                         </ContentParagraph>
                     <GeneralButton to="/last-project" label="En savoir plus" center/>
                 </Card>
             </div>
