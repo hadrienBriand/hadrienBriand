@@ -1,4 +1,5 @@
 <template>
+    <div :class="{ 'invisible': !appReady }">
          <GeneralHeader/>
         <main class="flex min-h-screen ">
             <GeneralSidebar/>
@@ -8,17 +9,15 @@
                 </div>
             </div>
         </main>
+    </div>
 </template>
 
 <script setup lang="ts">
 
     const {isMenuOpen} = useMenu()
-    const {responsive} = useResponsive()
-
-
+const appReady = useState('appReady', () => false)
     const wrapper = computed(() => {
             return isMenuOpen.value
-      
     })
     
 </script>

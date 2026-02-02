@@ -58,7 +58,7 @@ grid: {
         margin:25,
     formatter: (value: number) => {
       if (value === 0) return 'Noob'
-      if (value === 5) return 'Evan You *'
+      if (value === 5) return 'PGM *'
       return ''
     }
   }

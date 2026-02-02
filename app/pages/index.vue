@@ -63,10 +63,10 @@
   meta: [
     { 
       name: 'description', 
-      content: 'Développeur Frontend spécialisé en Vue.js et Nuxt. Disponible en Mars 2026 pour missions en métropole lilloise ou full-remote. Découvrez mon portfolio et mes projets.' 
+      content: 'Développeur Frontend spécialisé en Vue.js et Nuxt. Disponible en Mars 2026 pour missions en métropole lilloise ou full-remote. Découvrez qui je suis à travers ce site.' 
     },
     { property: 'og:title', content: 'Hadrien Briand - Développeur Frontend' },
-    { property: 'og:description', content: 'Portfolio et projets d\'un développeur Frontend à Lille' },
+    { property: 'og:description', content: 'Portfolio et CV d\'un développeur Frontend à Lille' },
     { property: 'og:type', content: 'website' },
     { property: 'og:image', content: '/images/avatar.png' },
     { name: 'twitter:card', content: 'summary' }
@@ -77,7 +77,7 @@
 
     onMounted(() => {
             isLoading.value = false
-    })
+    }) 
 
    
 
