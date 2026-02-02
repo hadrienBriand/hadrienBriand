@@ -5,7 +5,7 @@
     </ContentParagraph>
     <GeneralButton to="https://wimsapp.com" target="_blank" label="Découvrir l'application" center big ></GeneralButton>
 </ContentText>
-<NuxtImg src="/images/last-project/home.png" loading="lazy" alt="Capture d'écran de la page d'accueil de wimsapp" class="hidden md:block w-[60%] mx-auto"/>
+<NuxtImg src="/images/wimsapp-home.png" loading="lazy" alt="Capture d'écran de la page d'accueil de wimsapp" class="hidden md:block w-[60%] mx-auto"/>
 </template>
 
 <script setup lang='ts'></script>
