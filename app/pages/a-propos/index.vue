@@ -14,7 +14,7 @@
                     C'est pourquoi je cherche autant que possible à travailler sur des projets qui me parlent : qu'ils soient à dimension <GeneralBig>éthique, écologique, pédagogique ou sociale</GeneralBig>. J'ai besoin de comprendre pourquoi je code, pour qui, et dans quel but, c'est ce qui nourrit ma motivation au quotidien et me pousse à donner le meilleur de moi-même.
                 </ContentParagraph>
             </ContentText>
-            <NuxtImg src="/images/illustration-1.jpg" loading="lazy" alt="Capture d'écran de la page d'accueil de wimsapp" class="hidden md:block w-[60%] mx-auto"/>
+            <NuxtImg src="/images/illustration.jpg" loading="lazy" alt="Capture d'écran de la page d'accueil de wimsapp" class="hidden md:block w-[60%] mx-auto"/>
             <ContentText>
                 <ContentParagraph>
                     Mon expérience chez MGDIS illustre bien cette philosophie. Pendant plusieurs années, j'ai eu la chance de travailler au sein d'une entreprise qui conçoit des outils numériques pour les collectivités locales — et donc, in fine, pour les citoyen·es. Portails de démarches en ligne, plateformes d'information, outils de prise de rendez-vous... <GeneralBig>Chaque fonctionnalité que nous développions avait un impact direct sur la vie des usagers</GeneralBig>. Permettre à quelqu'un de trouver une information rapidement, de simplifier une démarche administrative souvent perçue comme complexe, ou d'obtenir un rendez-vous sans avoir à patienter des heures au téléphone : voilà ce qui donnait un sens profond à mon travail au quotidien.
