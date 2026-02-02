@@ -27,6 +27,7 @@ export default defineNuxtConfig({
     serverBundle: {
       collections: ['solar'],
       remote: false
+      
     },
      clientBundle: {
       scan: true,
