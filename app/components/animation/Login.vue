@@ -37,8 +37,8 @@ onMounted(async () => {
     if (!textRef.value) return
     
     await new Promise(p =>setTimeout(p,300) )
-     typingEffect(textRef.value, text)
     showImage.value = true
+    typingEffect(textRef.value, text)
     
     await new Promise(r => setTimeout(r, 2000))
     finished.value = true
