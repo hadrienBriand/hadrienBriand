@@ -9,9 +9,9 @@
         La solution est venue de ma mère, qui s'avère être la reine des têtes en l'air. Au cours d'une discussion, elle me parle d'un 
         fichier excel qu'elle a créé pour se souvenir de l'endroit où elle avait mit telle ou telle chose. 
         Elle me décrit cela comme pratique, mais fastidieux. <br />
-        Dans ma tête, ça fuse, <strong class="text-primary">Wimsapp</strong> est née ! 
+        Dans ma tête, ça fuse, <GeneralBig>Wimsapp</GeneralBig> est née ! 
     </ContentParagraph>
-    <p class="text-xs italic mb-8">wimsapp:  <strong class="text-primary">W</strong>here <strong class="text-primary">I</strong>s <strong class="text-primary">M</strong>y <strong class="text-primary">S</strong>tuff - <strong class="text-primary">App</strong>lication.</p>
+    <p class="text-xs italic mb-8 dark:text-white">wimsapp:  <GeneralBig>W</GeneralBig>here <GeneralBig>I</GeneralBig>s <GeneralBig>M</GeneralBig>y <GeneralBig>S</GeneralBig>tuff - <GeneralBig>App</GeneralBig>lication.</p>
     
     <!-------- Roadmap du projet -------->
     <ContentTitle>Roadmap</ContentTitle>
@@ -36,7 +36,7 @@
       Pour avoir un mvp utilisable rapidement (ma mère cherchait son classeur), je suis parti sur les fonctionnalités essentielles : 
     </ContentParagraph>
     <ContentList :items="features"/>
-    <p class="text-xs italic mb-8">CRUD (Cread Read Update Delete) est un acronyme pour les façons dont on peut fonctionner sur des données stockées.</p>
+    <p class="text-xs italic mb-8 dark:text-white">CRUD (Cread Read Update Delete) est un acronyme pour les façons dont on peut fonctionner sur des données stockées.</p>
     
     <!-------- Pistes d'améliorations -------->
     

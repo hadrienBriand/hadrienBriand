@@ -50,6 +50,10 @@ html, body {
   height: 100%;
 }
 
+.dark body{
+  background-color: #1F2A3D;
+}
+
 #__nuxt {
   height: 100vh;
   position: relative;

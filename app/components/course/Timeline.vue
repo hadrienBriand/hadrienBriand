@@ -1,7 +1,7 @@
 <template>
     <ul class="timeline py-2 relative flex flex-col justify-center space-y-4">
-        <li v-for="(job,index) in jobs" :key="index" class="flex justify-between items-center text-sm text-primary  relative">
-            <span class="text-xs">{{ job.time }}</span><p class="text-sm"><strong>{{ job.title }}</strong> - {{ job.location }}</p>
+        <li v-for="(job,index) in jobs" :key="index" class="flex justify-between items-center text-sm text-primary dark:text-white  relative">
+            <span class="text-xs">{{ job.time }}</span><p class="text-sm "><strong>{{ job.title }}</strong> - {{ job.location }}</p>
         </li>
     </ul>
 </template>
@@ -51,6 +51,9 @@
         }
     }
 
+    .dark   .timeline li::before{
+        background-color: #ECEBFF;
+    }
     .timeline li::before{
         content: '';
         width: 12px;

@@ -4,7 +4,7 @@
             <legend class="sr-only">Formulaire de contact</legend>
             
         <div class="flex flex-col mb-4">
-      <label for="nom-complet" class="text-sm text-primary mb-2">Nom complet </label>
+      <label for="nom-complet" class="text-sm text-primary mb-2 dark:text-primary-light">Nom complet </label>
       <input 
         v-model="form.fullName" 
         type="text" 
@@ -14,12 +14,12 @@
         autocomplete="name"
         aria-required="true"
         placeholder="Prénom Nom"
-        class="p-2 border border-primary text-sm text-primary rounded-md  placeholder-primary/65 font-medium focus-visible:outline-2 focus-visible:outline-primary-dark"
+        class="p-2 border border-primary  text-sm text-primary rounded-md  placeholder-primary/65 dark:bg-secondary dark:placeholder-white font-medium focus-visible:outline-2 focus-visible:outline-primary-dark"
       >
     </div>
 
             <div class="flex flex-col mb-4">
-            <label for="email" class="text-sm text-primary mb-2">
+            <label for="email" class="text-sm text-primary mb-2 dark:text-primary-light">
                 Adresse e-mail 
             </label>
             <input 
@@ -32,13 +32,13 @@
                 autocomplete="email"
                 aria-required="true"
                 aria-describedby="email-format"
-                class="text-sm p-2 border border-primary rounded-md   placeholder-primary/65 font-medium focus-visible:outline-2 focus-visible:outline-primary-dark "
+                class="text-sm p-2 border border-primary rounded-md   placeholder-primary/65 font-medium focus-visible:outline-2 dark:bg-secondary dark:placeholder-white focus-visible:outline-primary-dark "
             >
             <small id="email-format" class="sr-only">Format attendu : exemple@domaine.fr</small>
             </div>
 
             <div class="flex flex-col mb-8">
-            <label for="message" class="text-sm text-primary mb-2">
+            <label for="message" class="text-sm text-primary mb-2 dark:text-primary-light">
                 Message 
             </label>
             <textarea 
@@ -49,7 +49,7 @@
                 required
                 aria-required="true"
                 aria-describedby="message-info"
-                 class="text-sm p-2 border border-primary rounded-md   placeholder-primary/65 font-medium focus-visible:outline-2 focus-visible:outline-primary-dark"
+                 class="text-sm p-2 border border-primary rounded-md   placeholder-primary/65  dark:bg-secondary dark:placeholder-whitefont-medium focus-visible:outline-2 focus-visible:outline-primary-dark"
             ></textarea>
             <small id="message-info" class="sr-only">Décrivez votre demande en quelques phrases.</small>
             </div>

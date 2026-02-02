@@ -6,7 +6,7 @@
             <div class=" col-span-3 lg:col-span-2">
                 <Card icon="solar:chart-2-linear" title="Expérience">
                         <ExperienceChart />
-                        <p class="text-[10px] lg:text-[8px] font-light italic p-2">* Graphique 100% confiance en soi.</p>
+                        <p class="text-[10px] lg:text-[8px] font-light italic p-2 dark:text-primary-light">* Graphique 100% confiance en soi.</p>
                 </Card>
             </div>
             <!------ Identité / Disponibilité ------>
@@ -82,3 +82,4 @@
    
 
 </script>
+

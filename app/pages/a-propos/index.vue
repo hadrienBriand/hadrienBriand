@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 class="text-3xl text-primary font-semibold text-center">À propos</h1>
+        <h1 class="text-3xl text-primary dark:text-primary-light font-semibold text-center">À propos</h1>
         <ContentWrapper>
             <ContentText>
                 <ContentParagraph>

@@ -5,7 +5,7 @@
     <GeneralSidebar/>
     <div class=" w-full px-0 lg:px-4 pt-[60px] lg:pt-[90px] pb-0 transition"
     :class="!wrapper ? '' :'wrapper'">
-      <div class=" rounded-t-lg bg-gray h-full p-4 pt-[250px]">
+      <div class=" rounded-t-lg bg-gray dark:bg-secondary h-full p-4 pt-[250px]">
         <div class="relative">
           <div class="text-[150px] sm:text-[200px] font-bold text-primary text-center select-none leading-none">
             404
