@@ -9,7 +9,7 @@
                     </Card>
                 </div>
                 <div class=" lg:w-1/2 flex  justify-center items-center absolute bottom-0 right-0 " aria-hidden="true">
-                    <NuxtImg src="/images/avatar.png"  loading="lazy" class="w-64 lg:w-full" />
+                    <NuxtImg src="/images/workflow.png"  loading="lazy" class="w-64 lg:w-full" />
                 </div>
         </div>
     </section>

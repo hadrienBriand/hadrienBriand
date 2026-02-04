@@ -9,7 +9,7 @@
             <Icon v-else name="solar:close-circle-broken" class="text-primary dark:text-primary-light text-4xl"/>
         </button>    
         <NuxtLink  to="/" class="text-2xl font-light flex items-center gap-4 text-primary dark:text-primary-light" title="Retour sur la page d'accueil"> 
-                <NuxtImg src="/images/logo.png" alt="" class="w-16"/>
+                <NuxtImg src="/images/logo.png" alt="" class="w-16 -mt-10 lg:mt-0"/>
                 <p class="hidden sm:block" >Hadrien Briand </p>
             </NuxtLink>
         <div class="flex items-center gap-4 ml-auto">

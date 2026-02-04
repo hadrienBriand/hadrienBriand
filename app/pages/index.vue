@@ -18,14 +18,15 @@
                         Développeur Frontend <br />
                         Lille
                     </ContentParagraph>
-                    <NuxtImg src="/images/avatar.png" alt="Illustration d'Hadrien Briand" class="w-24 xl:w-28 absolute bottom-2 right-2" loading="lazy"/>
+                    <NuxtImg src="/images/avatar.png" alt="Illustration d'Hadrien Briand" class="w-24 xl:w-32 absolute bottom-2 right-2" loading="lazy"/>
                    </div>
                 </Card>
-                <Card icon="solar:clock-circle-broken" title="Disponibilité" class="flex-1" >
+                <Card icon="solar:clock-circle-broken" title="Disponibilité" class="flex-1 relative" >
                       <ContentParagraph>
                         Mars 2026 <br />
                         Métropole Lilloise / full-remote
                         </ContentParagraph>
+                    <NuxtImg src="/images/clock.png" alt="Illustration d'Hadrien Briand" class="w-16 absolute bottom-2 right-2" loading="lazy"/>
                 </Card>
             </div>
             <!------ Parcours / Dernier projet ------>
