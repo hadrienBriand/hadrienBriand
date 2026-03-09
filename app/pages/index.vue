@@ -23,7 +23,7 @@
                 </Card>
                 <Card icon="solar:clock-circle-broken" title="Disponibilité" class="flex-1 relative" >
                       <ContentParagraph>
-                        Mars 2026 <br />
+                        Immédiatement <br />
                         Métropole Lilloise / full-remote
                         </ContentParagraph>
                     <NuxtImg src="/images/clock.png" alt="Illustration d'Hadrien Briand" class="w-16 absolute bottom-2 right-2" loading="lazy"/>
