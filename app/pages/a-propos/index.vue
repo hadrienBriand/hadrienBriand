@@ -2,7 +2,7 @@
     <div>
         <h1 class="text-3xl text-primary dark:text-primary-light font-semibold text-center">À propos</h1>
         <ContentWrapper>
-            <ContentImgText img="/images/avatar-full.png" alt-img="Illustration d'Hadrien Briand">
+            <ContentImgText :img="imgColor" alt-img="Illustration d'Hadrien Briand">
                 <ContentParagraph>
                     <GeneralBig>Développeur frontend à Lille</GeneralBig>, je prends plaisir depuis huit ans à faire grandir mes compétences pour donner vie à des projets utiles et porteurs de sens.
                     Ce qui me motive profondément dans ce métier, c'est la sensation d'aider les gens, de leur proposer des solutions digitales qui simplifient leur quotidien. Le code, pour moi, n'est pas une fin en soi : il prend toute sa valeur quand il répond à un besoin humain concret.
@@ -25,7 +25,7 @@
                     Construire des sites et applications de façon élégante, performante, responsive et accessible reste au cœur de mon métier. <GeneralBig>Je n'ai pas exploré le backend pour m'éloigner du frontend</GeneralBig>, mais pour le compléter, l'enrichir, et repousser mes propres limites. Pouvoir concevoir des API robustes en plus de les exploiter côté client m'apporte un confort de travail précieux. Cela me permet de mieux anticiper les contraintes, de proposer des architectures plus cohérentes, et d'avoir une vision globale des projets sur lesquels je travaille. C'est un champ de possibilités que j'ai envie de continuer à explorer et à approfondir.
                 </ContentParagraph>
             </ContentText>
-            <ContentImgText img="/images/workflow-full.png" alt-img="Illustration du bureau d'Hadrien Briand">
+            <ContentImgText :img="imgColor2" alt-img="Illustration du bureau d'Hadrien Briand">
                 <ContentParagraph>
                     Pour cette nouvelle année, <GeneralBig>je suis à la recherche d'une aventure humaine autant que professionnelle</GeneralBig>. Un projet, une équipe, une entreprise où je pourrai me sentir utile, aligné avec mes valeurs, et proche des utilisateurs finaux. 
                     Ce que je recherche avant tout, c'est <GeneralBig>un environnement où l'on croit que la tech peut être un levier positif</GeneralBig>. Où l'on prend le temps de bien faire les choses. Où l'on valorise autant la qualité du code que l'impact qu'il génère. Et où l'on comprend que derrière chaque interface, il y a des humains, avec leurs besoins, leurs frustrations, et leurs attentes.
@@ -35,4 +35,19 @@
         </ContentWrapper>
     </div>
 </template>
+
+<script setup lang='ts'>
+const colorMode = useColorMode()
+
+const imgColor = computed(() => {
+    return  colorMode.value ==="light"
+        ?  "/images/avatar-full.png"
+        : '/images/avatar-full-white.png'
+})
+const imgColor2 = computed(() => {
+    return  colorMode.value ==="light"
+        ?  "/images/workflow-full.png"
+        : '/images/workflow-full-white.png'
+})
+</script>
 
