@@ -4,9 +4,12 @@
             <span class="text-xs">{{ job.time }}</span><p class="text-sm "><strong>{{ job.title }}</strong> - {{ job.location }}</p>
         </li>
     </ul>
+    <Button to="/mon-parcours" label="En savoir plus" center class="mt-4"/>
 </template>
 
 <script setup lang="ts">
+import Button from '../general/Button.vue';
+
 
 
     const jobs = [

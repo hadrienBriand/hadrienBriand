@@ -17,6 +17,15 @@
                     À propos
                 </NuxtLink>
                 <NuxtLink
+                @click="handleToggleMenu" to="/mon-parcours"  
+                activeClass="text-primary-dark  bg-primary-light rounded-md dark:!text-primary-dark" 
+                class="flex items-center gap-4 w-fit py-2 px-4 dark:text-primary-light">
+                    <Icon name="solar:hamburger-menu-broken" class="text-xl text-primary "/>
+                    Mon parcours
+                </NuxtLink>
+
+                
+                <NuxtLink
                 @click="handleToggleMenu" to="/dernier-projet"  
                 activeClass="text-primary-dark bg-primary-light rounded-md dark:!text-primary-dark" 
                 class="flex items-center gap-4 w-fit py-2 px-4 dark:text-primary-light">

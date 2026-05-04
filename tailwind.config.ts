@@ -11,8 +11,10 @@ export default <Partial<Config>>{
                 'primary-dark' :'#2F2A83',
                 secondary:'#1F2A3D',
                 'secondary-darker':"#1A2537",
-                gray:'#F4F7FB',
-                
+                grey:'#F4F7FB',
+                mgdis:"#0f056b",
+                akawam:"#f05b33",
+                toutenpixel:"#34a4d9",
             }
         }
     }

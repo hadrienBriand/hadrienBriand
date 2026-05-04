@@ -1,22 +1,9 @@
 <template>
-  <!-- Rien tant qu'on n'a pas décidé -->
-  <div v-if="showIntro === null" class="fixed inset-0 z-50 bg-gray"></div>
-
-  <Transition name="fade">
-    <section v-if="showIntro === true" class="fixed inset-0 z-50 flex items-center justify-center bg-gray">
-      <div>
-        <div class="text-center">
-          <AnimationLogin/>
-        </div>
-      </div>
-    </section>
-  </Transition>
-
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
   
-  <GeneralLoader v-if="isReady === false && showIntro === false" />
+  <GeneralLoader v-if="isReady === false" />
 </template>
 
 <script setup lang="ts">
