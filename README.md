@@ -17,7 +17,7 @@
 
 ---
 
-## 🚧 En cours — 2025
+## 🚧 En cours — 2026
 
 ### 🎨 Frontend
 
