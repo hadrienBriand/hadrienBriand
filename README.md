@@ -1,75 +1,49 @@
-# Nuxt Minimal Starter
+# 🗺️ Roadmap — Développeur Frontend & Fullstack
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+> Suivi de mes objectifs d'apprentissage, consolidation et montée en compétences.
 
-## Setup
+---
 
-Make sure to install dependencies:
+## ✅ Maîtrisé
 
-```bash
-# npm
-npm install
+| Domaine | Technologies |
+|---|---|
+| **Frameworks JS** | Vue 3 (Composition API), Nuxt 3 |
+| **Backend** | NestJS |
+| **CMS** | WordPress, Drupal |
+| **Langages** | TypeScript, JavaScript (ES2022+) |
+| **Styles** | SCSS, Tailwind CSS |
+| **Outils** | Git, GitHub |
 
-# pnpm
-pnpm install
+---
 
-# yarn
-yarn install
+## 🚧 En cours — 2025
 
-# bun
-bun install
-```
+### 🎨 Frontend
 
-## Development Server
+- [ ] Approfondir les **design systems** avec Tailwind (tokens, variants custom)
+- [ ] Maîtriser **Storybook** pour documenter les composants Vue
+- [ ] Explorer **Nuxt Layers** pour les architectures modulaires
+- [ ] Maitriser et approfondir React et Next
+- [ ] Améliorer les performances web (Core Web Vitals, lazy loading, SSR vs SSG)
 
-Start the development server on `http://localhost:3000`:
+### 🔧 Backend / API
 
-```bash
-# npm
-npm run dev
+- [ ] Creuser les **guards, interceptors et pipes** dans NestJS
+- [ ] Intégrer et maîtriser **Prisma ORM**
+- [ ] Configurer des pipelines **CI/CD** (GitHub Actions)
 
-# pnpm
-pnpm dev
+### 🧪 Qualité & Tests
 
-# yarn
-yarn dev
+- [ ] Écrire des tests unitaires avec **Vitest**
+- [ ] Tests end-to-end avec **Playwright**
+- [ ] Mettre en place **ESLint + Prettier** dans tous les projets
 
-# bun
-bun run dev
-```
 
-## Production
 
-Build the application for production:
 
-```bash
-# npm
-npm run build
 
-# pnpm
-pnpm build
 
-# yarn
-yarn build
+---
 
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+*Dernière mise à jour : mai 2026*
