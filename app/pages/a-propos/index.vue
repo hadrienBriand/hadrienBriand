@@ -4,7 +4,7 @@
         <ContentWrapper>
             <ContentImgText :img="imgColor" alt-img="Illustration d'Hadrien Briand">
                 <ContentParagraph>
-                    <GeneralBig>Développeur frontend à Lille</GeneralBig>, je prends plaisir depuis huit ans à faire grandir mes compétences pour donner vie à des projets utiles et porteurs de sens.
+                    <GeneralBig>Développeur fullstack à Lille</GeneralBig>, je prends plaisir depuis huit ans à faire grandir mes compétences pour donner vie à des projets utiles et porteurs de sens.
                     Ce qui me motive profondément dans ce métier, c'est la sensation d'aider les gens, de leur proposer des solutions digitales qui simplifient leur quotidien. Le code, pour moi, n'est pas une fin en soi : il prend toute sa valeur quand il répond à un besoin humain concret.
                 </ContentParagraph>
             </ContentImgText>

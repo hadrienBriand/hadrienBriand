@@ -15,7 +15,7 @@
                    <div class="flex items-center">
                      <ContentParagraph>
                         Hadrien Briand <br />
-                        Développeur Frontend <br />
+                        Développeur Fullstack <br />
                         Lille
                     </ContentParagraph>
                     <NuxtImg src="/images/avatar.png" alt="Illustration d'Hadrien Briand" class="w-24 xl:w-32 absolute bottom-2 right-2" loading="lazy"/>

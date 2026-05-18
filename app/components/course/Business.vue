@@ -2,7 +2,7 @@
     <Card :title="title" icon="solar:suitcase-outline">
         <p class="text-xs italic mb-4 font-semibold text-primary uppercase">{{ time }}</p>
         
-        <a v-if="businessLink" :href="businessLink" class="text-primary font-medium mb-4 sm:mb-0 initial :absolute top-6 right-6 italic text-sm flex items-center gap-2 w-fit transition hover:translate-x-2" target="_blank">
+        <a v-if="businessLink" :href="businessLink" class="text-primary font-medium mb-4 sm:mb-0  initial :absolute top-6 right-6 italic text-sm flex items-center gap-2 w-fit transition hover:translate-x-2" target="_blank">
             Découvrir {{ title }}
             <Icon name="solar:arrow-right-outline" class=" font-semibold"/>
             </a>
