@@ -2,24 +2,24 @@
 <div>
    <h1 class="text-3xl text-primary dark:text-primary-light font-semibold text-center mb-8">Mon parcours</h1>
 
-  <Business title="Freelance - Développeur Fullstack" time="Septembre 2024 - Aujourd'hui" class="mb-4">
-      <h2 class="font-semibold text-primary">Collaboration continue avec Mgdis</h2>
+  <Business title="Freelance" job="Développeur Fullstack" time="Septembre 2024 - Aujourd'hui" class="mb-4">
+      <h2 class="font-semibold text-primary dark:text-primary-light my-4">Collaboration continue avec Mgdis</h2>
       <BusinessList  :experiences="experiences[0]" />
-      <h2 class="font-semibold text-primary my-4">Autres clients</h2>
+      <h2 class="font-semibold text-primary dark:text-primary-light my-4">Autres clients</h2>
       <BusinessList  :experiences="experiences[1]" />
-      <p class="text-sm text-gray-600 italic mt-2"><strong>Stack technique:</strong> Drupal, Wordpress headless, Typescript, Vue 3, Nuxt, Tailwind, Nestjs, Docker, Git, Github Actions </p>
+      <p class="text-sm text-gray-600 dark:text-primary-light italic mt-2"><strong>Stack technique:</strong> Drupal, Wordpress headless, Typescript, Vue 3, Nuxt, Tailwind, Nestjs, Docker, Git, Github Actions </p>
   </Business>
-  <Business title="Mgdis - Développeur Frontend" time="Novembre 2020 - Juillet 2024" class="mb-4" business-link="https://www.mgdis.fr/">
+  <Business title="Mgdis" job="Développeur Frontend" time="Novembre 2020 - Juillet 2024" class="mb-4" business-link="https://www.mgdis.fr/">
         <BusinessList  :experiences="experiences[2]"/>
-        <p class="text-sm text-gray-600 italic mt-2"><strong>Stack technique:</strong> Drupal, Wordpress, HTML, SCSS, Typescript, Vue 3, Docker, Git </p>
+        <p class="text-sm text-gray-600 dark:text-primary-light italic mt-2"><strong>Stack technique:</strong> Drupal, Wordpress, HTML, SCSS, Typescript, Vue 3, Docker, Git </p>
   </Business>
-  <Business title="Toutenpixel - Développeur Frontend" time="Août 2019 - Juillet 2020" class="mb-4" business-link="https://www.toutenpixel.fr/">
+  <Business title="Toutenpixel" job="Développeur Frontend" time="Août 2019 - Juillet 2020" class="mb-4" business-link="https://www.toutenpixel.fr/">
         <BusinessList  :experiences="experiences[3]"/>
-        <p class="text-sm text-gray-600 italic mt-2"><strong>Stack technique:</strong> Wordpress, HTML,SCSS, PHP, Javascript, Vue 2, Git</p>
+        <p class="text-sm text-gray-600 dark:text-primary-light  italic mt-2"><strong>Stack technique:</strong> Wordpress, HTML,SCSS, PHP, Javascript, Vue 2, Git</p>
   </Business>
-  <Business title="Akawam - Développeur Frontend" time="Avril 2017 - Septembre 2018" class="mb-4" business-link="https://www.akawam.com/">
+  <Business title="Akawam" job="Développeur Frontend" time="Avril 2017 - Septembre 2018" class="mb-4" business-link="https://www.akawam.com/">
         <BusinessList  :experiences="experiences[4]"/>
-        <p class="text-sm text-gray-600 italic mt-2"><strong>Stack technique:</strong>  Wordpress, HTML,SCSS, PHP, Javascript, Vue 2, Git,Figma</p>
+        <p class="text-sm text-gray-600 dark:text-primary-light italic mt-2"><strong>Stack technique:</strong>  Wordpress, HTML,SCSS, PHP, Javascript, Vue 2, Git,Figma</p>
   </Business>
         
 </div>
